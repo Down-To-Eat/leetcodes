@@ -210,8 +210,6 @@ Solutions will be organized topic-wise to make navigation, revision, and progres
 
 LeetCode/
 
-│
-
 ├── 01-Arrays/
 
 ├── 02-Hashing-and-Strings/
@@ -233,8 +231,6 @@ LeetCode/
 ├── 10-Bit-Manipulation-and-Number-Theory/
 
 ├── 11-Advanced-Data-Structures/
-
-│
 
 └── README.md
 
