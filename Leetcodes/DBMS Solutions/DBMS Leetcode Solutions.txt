@@ -1,0 +1,17 @@
+#175 select p.firstName, p.lastName, a.city, a.state from Person as p left join Address as a on p.personId = a.personId;
+
+#176 select (select salary from Employee order by salary desc limit 1 offset 1) as SecondHighestSalary;
+
+#178 SELECT score, DENSE_RANK() OVER (ORDER BY score DESC) AS `rank` FROM Scores ORDER BY score DESC;
+
+#181 select e.name as Employee from Employee e join Employee m on e.managerid=m.id where e.salary>m.salary;
+
+#182 select email from Person group by email having count(email)>1;
+
+#183 select c.name as Customers from Customers c left join Orders o on c.id = o.customerId where o.customerId is null;
+
+#184 select d.name as Department, e.name as Employee, e.salary as Salary from Employee as e join Department as d on e.departmentId = d.id where e.salary = ( select MAX(e2.salary) from Employee as e2 where e2.departmentId = e.departmentId);
+
+#196 delete p1 from Person p1 join Person p2 on p1.email = p2.email where p1.id > p2.id;
+
+#197 select w2.id as Id from Weather w1 join Weather w2 on DATEDIFF(w2.recordDate, w1.recordDate) = 1 where w2.temperature > w1.temperature;
